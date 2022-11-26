@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <table class="table">
+
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+
+            <% for(let vendedor of listaVendedores) {  %>
+                <tr>
+                    <td>
+                        <%= vendedor.codigo%>
+                    </td>
+                    <td>
+                        <%= vendedor.nome%>
+                    </td>
+                    <td>
+                        <%= vendedor.idade%>
+                    </td>
+                </tr>
+
+            <% } %>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

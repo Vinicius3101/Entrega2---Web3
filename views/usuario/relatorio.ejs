@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Usuários</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <table class="table">
+
+            <tr>
+                <th>E-mail</th>
+                <th>Nome</th>
+            </tr>
+
+            <% for(let usuario of listaUsuarios) {  %>
+                <tr>
+                    <td>
+                        <%= usuario.email%>
+                    </td>
+                    <td>
+                        <%= usuario.nome%>
+                    </td>
+                </tr>
+
+            <% } %>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p style="font-size:40px;"> Login </p>
+
+        <% if (erro) { %>
+            <div style="text-align:center; background-color:brown; color:white">Dados incorretos! Tente novamente.</div>
+        <% } %>
+
+        <form action= "/usuario/login" method="post">
+
+            <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input required type="email" required class="form-control" name="email">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Senha</label>
+                <input type="password" required class="form-control" name="senha">
+            </div>
+
+            <button type="submit" class="btn btn-success" >Entrar</button>
+            <a class="btn btn-primary" href="/usuario/cadastrar">Cadastrar</a>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
